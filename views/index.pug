@@ -1,0 +1,38 @@
+extends layout
+
+block dynamic_content
+	h3#player_turn #{turn}
+	table
+		tr
+			td#0_0 #{cells[0]}
+			td#0_1 #{cells[1]}
+			td#0_2 #{cells[2]}
+			td#0_3 #{cells[3]}
+			td#0_4 #{cells[4]}
+		tr
+			td#1_0 #{cells[5]}
+			td#1_1 #{cells[6]}
+			td#1_2 #{cells[7]}
+			td#1_3 #{cells[8]}
+			td#1_4 #{cells[9]}
+		tr
+			td#2_0 #{cells[10]}
+			td#2_1 #{cells[11]}
+			td#2_2 #{cells[12]}
+			td#2_3 #{cells[13]}
+			td#2_4 #{cells[14]}
+		tr
+			td#3_0 #{cells[15]}
+			td#3_1 #{cells[16]}
+			td#3_2 #{cells[17]}
+			td#3_3 #{cells[18]}
+			td#3_4 #{cells[19]}
+		tr
+			td#4_0 #{cells[20]}
+			td#4_1 #{cells[21]}
+			td#4_2 #{cells[22]}
+			td#4_3 #{cells[23]}
+			td#4_4 #{cells[24]}
+	form(method='POST' action='')
+		button.btn.btn-primary(type='submit') Reset
+
