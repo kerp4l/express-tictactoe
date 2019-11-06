@@ -2,9 +2,9 @@
   "name": "foobar",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+"scripts": {
+"start": "./node_modules/parcel-bundler/bin/cli.js index.html --port 8080","build": "parcel build index.html"
+},
   "dependencies": {
     "async": "^3.1.0",
     "bluebird": "^3.7.1",
